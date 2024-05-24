@@ -12,7 +12,7 @@ html, body {
 
 body {
     opacity: 0;
-    animation: fadeIn 2s forwards; /* Durasi animasi fade-in diatur menjadi 2 detik */
+    animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn {
