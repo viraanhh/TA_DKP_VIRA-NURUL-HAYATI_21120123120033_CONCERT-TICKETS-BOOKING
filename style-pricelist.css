@@ -1,0 +1,104 @@
+body {
+    font-family: Garamond, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc0cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Ensure the body is the reference for absolute positioning */
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Durasi animasi fade-in diatur menjadi 2 detik */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #ffc0cb;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 1000px;
+    padding-top: 60px; /* Add some padding to avoid overlapping with the buttons */
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header a.button {
+    display: inline-block;
+    margin: 0 10px; /* Adjust margins for better spacing */
+    padding: 10px 20px;
+    background-color: #8359a3; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.header a.button:hover {
+    background-color: #74c365; 
+}
+
+.container {
+    width: 50%;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+table {
+    width: 450px; /* Adjusted to fit within the container */
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #844c4c;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e89c9c;
+}
+
+.pricelist-image {
+    width: 600px;
+    height: auto;
+    display: block;
+    align-self: center;
+    margin-top: 100px;
+    margin-right : 100px
+}
+
+.footer {
+    text-align: center;
+    margin-top: 700px; /* Adjusted to avoid excessive margin */
+    width: 100%;
+}
+
+.footer i {
+    color: #333;
+}
