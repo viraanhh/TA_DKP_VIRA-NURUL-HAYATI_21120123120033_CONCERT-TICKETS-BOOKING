@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-image"></div> <!-- Div untuk gambar background -->
+    <div class="background-image"></div>
     <div class="container">
         <div class="header">
             <h3>Taylor Swift: The Eras Tour</h3>
