@@ -23,7 +23,7 @@
             <input type="email" id="email" name="email" required>
             
             <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" required>
+            <input type="number" id="quantity" name="quantity" min="1" max="2" required>
             
             <label for="ticket_type">Ticket Type:</label>
             <select id="ticket_type" name="ticket_type">
