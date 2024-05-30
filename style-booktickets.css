@@ -107,12 +107,7 @@ h3 {
     text-align: center;
 }
         
-.booking-details {
-    background-color: #d7dab8;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
+
 
 .footer {
     text-align: center;
@@ -124,5 +119,5 @@ h3 {
 .footer hr {
     border: 1px solid #333;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto;
 }
