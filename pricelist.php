@@ -24,7 +24,6 @@ $ticket_prices = [
     <link rel="stylesheet" href="style-pricelist.css">
 </head>
 <body>
-
     <div class="main-content">
         <div class="header">
             <a href="index.php" class="button">Home Page</a>
@@ -35,19 +34,20 @@ $ticket_prices = [
         <div class="container">
             <table>
                 <tr>
-                    <th>Category</th>
+                    <th>Category</th> 
                     <th>Price</th>
                 </tr>
                 <?php
                 for ($i = 0; $i < count($ticket_prices); $i++) {
                     echo "<tr>";
                     echo "<td>{$ticket_prices[$i][0]}</td>";
-                    echo "<td>{$ticket_prices[$i][1]}</td>";
+                    echo "<td>{$ticket_prices[$i][1]}</td>"; 
                     echo "</tr>";
                 }
                 ?>
             </table>
         </div>
+    </div>
 
         <div class="footer">
             <hr>

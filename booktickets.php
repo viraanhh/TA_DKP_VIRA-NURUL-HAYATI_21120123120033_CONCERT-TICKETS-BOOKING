@@ -15,7 +15,7 @@
 
     <div class="container">
         <h2>Taylor Swift: The Eras Tour - Concert Ticket Booking<br>July 29, 2024<br>Muladi Dome, Tembalang, Semarang</h2>
-        <form method="post">
+        <form method="post" action="book-details.php">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -23,7 +23,7 @@
             <input type="email" id="email" name="email" required>
             
             <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="2" required>
+            <input type="number" id="quantity" name="quantity" required>
             
             <label for="ticket_type">Ticket Type:</label>
             <select id="ticket_type" name="ticket_type">
@@ -109,29 +109,16 @@
             public function getTotalPrice() {
                 return $this->ticket_price * $this->quantity;
             }
-
-            public function displayBookingDetails() {
-                $total_price_formatted = number_format($this->getTotalPrice(), 0, ',', '.');
-                echo "<div class='booking-details'>";
-                echo "<h3>Finally, Here's Your Booking Details:</h3>";
-                echo "<p>Name: {$this->getName()}</p>";
-                echo "<p>Email: {$this->getEmail()}</p>";
-                echo "<p>Quantity: {$this->getQuantity()}</p>";
-                echo "<p>Ticket Type: {$this->getTicketLabel()}</p>";
-                echo "<p>Total Price: Rp {$total_price_formatted}</p>";
-                echo "<p>Kindly check your email to get the barcode.<p>";
-                echo "<p>See u, Swifties! <3<p>";
-                echo "</div>";
-            }
+            
         }
 
-        if(isset($_POST['submit'])){
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $quantity = $_POST['quantity'];
+        if(isset($_POST['submit'])){ 
+            $name = $_POST['name']; 
+            $email = $_POST['email']; 
+            $quantity = $_POST['quantity']; 
             $ticket_type = $_POST['ticket_type'];
 
-            if(empty($name) || empty($email) || empty($quantity)){
+            if(empty($name) || empty($email) || empty($quantity)){ 
                 echo "<p>Please fill all fields.</p>";
             } else {
                 $booking = new TicketBooking($name, $email, $quantity, $ticket_type);
