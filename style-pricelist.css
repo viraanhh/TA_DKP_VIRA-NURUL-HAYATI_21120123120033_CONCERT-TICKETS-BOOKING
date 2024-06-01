@@ -95,10 +95,17 @@ th {
 
 .footer {
     text-align: center;
-    margin-top: 700px; 
     width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 120px; 
+    transform: translateX(-50%);
 }
 
 .footer i {
     color: #333;
+    margin-right: 10px;
 }
