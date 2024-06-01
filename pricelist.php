@@ -1,5 +1,5 @@
 <?php 
-$ticket_prices = [
+$ticket_prices = [ 
     ["VIP 1 (It's Been A Long Time Coming Package)", "Rp 14.740.800"],
     ["VIP 2 (Karma is My Boyfriend Package)", "Rp 8.302.800"],
     ["VIP 3 (I Remember It All Too Well Package)", "Rp 7.192.800"],
